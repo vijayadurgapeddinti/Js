@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1 id="ih"></h1>
+        <h1 id="ih1">Vijaya</h1>
+        <h3 id="ih2"></h3>
+        <button onclick="display()">Display</button><br><br>
+        <button onclick="alert1()">validation</button>
+        <button onclick="console1()">console</button> 
+        <script>
+    //output statements
+    document.write("<h1>hello welcome to javascript...!</h1>");
+    document.getElementById('ih').innerHTML="hello welcome to javascript";
+    document.getElementById('ih1').innerHTML+="durga"; 
+    function display(){
+        document.getElementById('ih2').innerHTML="javascript buttons";
+    }
+    function alert1(){
+         alert('data valid');
+    }
+    function console1(){
+       console.log("welcome...!");
+    }
+    //variables
+    var num1=7;//global
+    if(1){
+        let num1=5;//local
+        document.write(`${num1} <br>`);
+    }
+    document.write(num1+"<br>");
+    //operators
+    //arithmetic operators
+    var num2=6;
+    document.write(`addition:${num1+num2}<br>`);
+    document.write(`subtraction:${num1-num2}<br>`);
+    document.write(`multiplication:${num1*num2}<br>`);
+    document.write(`divison:${num1/num2}<br>`);
+    document.write(`module:${num1%num2}<br>`);
+    //relational operators
+    document.write(`num1>num2:${num1>num2}<br>`);
+    document.write(`num1<num2:${num1<num2}<br>`);
+    document.write(`num1>=num2:${num1>=num2}<br>`);
+    document.write(`num1<=num2:${num1<=num2}<br>`);
+    document.write(`num1==num2:${num1==num2}<br>`);
+    document.write(`num1!=num2:${num1!=num2}<br>`);
+    document.write(`num1===num2:${num1===num2}<br>`);
+    document.write(`num1!==num2:${num1!==num2}<br>`);
+    //assignment operators
+    document.write(`num1+=2: ${num1+=2}<br>`);
+    document.write(`num1-=2: ${num1-=2}<br>`);
+    document.write(`num1*=2: ${num1*=2}<br>`);
+    document.write(`num1/=2: ${num1/=2}<br>`);
+    document.write(`num1%=2: ${num1%=2}<br>`);
+    //logical operators
+    n1=9
+    n2=10
+    n3=8
+    if(n1>n2 && n1>n3 ){
+        document.write(`${n1} is biggest<br>`);
+
+    }
+    n1=5
+    if (n2>n1 || n3>n1){
+        document.write(`${n1} is not biggest<br>`)
+    }
+   //increment or decrement
+   num3=++n1 + n2++ +--n1;
+   document.write(num3+"<br>") 
+   //conditional operator
+   n2=10;
+   n1=9;
+   num4=(n2>n1)?n2:n1;
+   document.write(num4+"<br>");
+   //bitwise operator
+    n5=n1|n2
+    document.write(n5+"<br>")
+    n5=n1&n2
+    document.write(n5+"<br>")
+    n5=~n1
+    document.write(n5+"<br>")
+
+
+    
+    
+    
+</script>
+</body>
+</html>

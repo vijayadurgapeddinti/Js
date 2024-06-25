@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //simple function
+        // welcome();
+        // function welcome(){
+        //     document.write("welcome World");
+        // }
+
+        //funt with parameters
+        // a = parseInt(prompt("Enter a number"));
+        // b = parseInt(prompt("Enter a number"));
+        // add(a,b);
+        // function add(x,y){
+        //     document.write(x+y);
+        // }
+
+        //funct with return 
+        // a = parseInt(prompt("Enter a number"));
+        // b = parseInt(prompt("Enter a number"));
+        // document.write(add(a,b));
+        // function add(x,y){
+        //     return x+y;
+        // }
+
+        //arrow function
+        // a = parseInt(prompt("Enter a number"));
+        // b = parseInt(prompt("Enter a number"));
+        // let add=(x,y)=>x+y;
+        // let res=add(a,b);
+        // document.write(res);
+        //task
+        a = parseInt(prompt("Enter a number"));
+        b = parseInt(prompt("Enter a number"));
+        opr=prompt("enter operation:1-add/2-sub/3-invalid:")
+        if(opr=="1"){
+            add=(x,y)=>x+y
+            document.write(add(a,b));
+        }
+        else if(opr=="2"){
+            sub=(x,y)=>x-y
+            document.write(sub(a,b));
+        }
+        else{
+            document.write("invalid input")
+        }
+       
+
+    </script>
+</body>
+</html>
